@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Comfy</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+    <div class="products-section ">
+      <div class="navbar">       <nav class="navbar-center">
+            <div class="list">
+                <button class="toggle-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="../About/about.html">about</a></li>
+                </ul>
+            </div>
+            <div class="title"><img src="./images/logo-black.svg" alt=""></div>
+            <div class="cart-logo">
+                <i class="fa-solid fa-cart-shopping fa-xl cart-img"></i>
+                <div class="circle">0</div>
+            </div>
+        </nav></div>
+ 
+        <div class="about-hero">
+            <div class="section-center">
+                home / Products
+            </div>
+        </div>
+        <div class="sidebar-overlay ">
+            <aside class="sidebar">
+              <!-- close -->
+              <button class="sidebar-close">
+                <i class="fas fa-times"></i>
+              </button>
+              <!-- links -->
+              <ul class="sidebar-links">
+                <li>
+                  <a href="../index.html" class="sidebar-link">
+                    <i class="fas fa-home fa-fw"></i>
+                    home
+                  </a>
+                </li>
+                <li>
+                  <a href="products.html" class="sidebar-link">
+                    <i class="fas fa-couch fa-fw"></i>
+                    products
+                  </a>
+                </li>
+                <li>
+                  <a href="../About/about.html" class="sidebar-link">
+                    <i class="fas fa-book fa-fw"></i>
+                    about
+                  </a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        <div class="cart-overlay">
+            <aside class="cart">
+                <button class="cross"><i class="fas fa-times"></i></button>
+                <div class="heading">Your bag</div>
+                <div class="cart-item">
+              <!-- <div class="selected-item">
+                <img src="https://course-api.com/images/store/product-1.jpeg" >
+                <div class="selected-item-info">
+                    <h5>High Back Bench</h5>
+                    <div class="selected-item-price">$4.55</div>
+                    <button class="selected-item-remove">remove</button>
+                </div>
+                <div class="quantity-toogle">
+                    <button class="increase">+</button>
+              
+                    <span class="quantity-number">1</span>
+                    <button class="decrease">-</button>
+                </div>
+              </div> -->
+                </div>
+                <div class="footer">
+                    <div class="total">Total: <span class="total-amount">$0.00</span></div>
+                    <button class="checkout">checkout</button>
+                </div>
+            </aside>
+        </div>
+        <div class="products-center">
+           <div class="filter-container">
+            <div class="filter">
+                <input type="text" placeholder="Search for Product" class="search-input">
+                    <h4 >Company</h4>
+                    <div class="companies">
+                        <button class="company-btn">All</button>
+                        <button class="company-btn">ikea</button>
+                        <button class="company-btn">marcos</button>
+                        <button class="company-btn">caressa</button>
+                        <button class="company-btn">liddy</button>
+                    </div>
+                 <h4>Price</h4>
+                 <input type="range" class="price-range" min="0" value="80" max="80">
+                 <p class="price-value">Value : $80</p>
+            </div>
+        </div>
+            <div class="products-info">
+                
+            </div>
+        </div>
+        <div class="page-loading">
+            <h2>Loading...</h2>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/b20fe84233.js" crossorigin="anonymous"></script>
+    <script type="module" src="/index.js"></script>
+    <script type="module" src="products.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+1.) withOUT INCLUDING the comfy logo in flex, we can position it with
+ position relative that way it'be more comfortable with positioning.
+
+2.) To dark img in bg, Choose overlay method or the other way:
+
+i .upper-section {
+    border: 2px solid blue;
+    background-image: url(main-bcg.jpeg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.upper-section-body {
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    padding: 33px 68px;
+}
+
+ii.  .hero {
+    min-height: 100vh;
+    margin-top: -6rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/main-bcg.jpeg) center/cover;
+    display: grid;
+    place-items: center;
+    color: var(--clr-white);
+  padding: 33px 68px;
+}
+
+
+3.) To maintain max-width in every screen size we use width:100%(or you can just specify the width instead of max-width 
+the diff. is max-width will maintain the structutre till the very last skrinkage of screen as it is response friendly) otherwise if we don't add width:100%, then 
+the screen will decide the width but it would not go upto max-width.. So to maintain width throughout the screen we use
+width+max-width.
+
+4.) To center with margin, firstly display:block and margin:0 auto and give that element some width if you want..
+
+5.) The distance you specify in grid-template-rows& columns, it will be get maintained automatically if the content
+in one of the rows expands vertically...(ex: overlay cart-items will be maintained if more items get added.)
+
+6.) .navbar-page(outer layer){
+height: 6rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-center(for inner layer){
+width: 90vw;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+}
+
+}
+

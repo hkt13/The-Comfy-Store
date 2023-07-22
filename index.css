@@ -1,0 +1,658 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+}
+
+body{
+min-height: 100vh;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+line-height: 1.5;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 800px)
+{
+body {
+    font-size: 1rem;
+}
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+
+h2 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+.upper-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/main-bcg.jpeg') center/cover;
+    min-height: 100vh;
+}
+
+.navbar{
+    height: 6rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    max-width: 1170px;
+}
+
+@media screen and (min-width: 800px)
+{
+.navbar-center {
+    position: relative;
+}
+}
+
+.toggle-nav {
+    background: hsl(21, 62%, 45%);
+    border-color: transparent;
+    color: white;
+    width: 3.75rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+@media screen and (min-width: 800px)
+{
+.toggle-nav {
+    display: none;
+}
+}
+
+
+@media screen and (min-width: 800px)
+{
+.title {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}}
+
+@media screen and (min-width: 992px){
+.title {
+    left: 50%;
+}
+}
+
+.list ul{
+    display: none;
+}
+
+@media screen and (min-width:800px) {
+    .list ul{
+    display: flex;
+    transition: all 0.3s linear;
+}
+}
+
+.list ul li{
+    list-style-type: none;
+    font-size: 1.25rem;
+}
+
+.list a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    transition: all 0.3s linear;
+    margin-right: 3rem;
+}
+
+.list a:hover{
+    color: hsl(21, 62%, 45%);;
+}
+
+.cart-logo{
+    position: relative;
+    margin-right: 2rem;
+}
+
+@media  screen and (max-width: 992px) {
+    .cart-logo{
+        margin-right: 0px;
+    }
+}
+
+.cart-img{
+    color: white;
+    cursor: pointer;
+}
+
+.circle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #ca5555;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: -1rem;
+    right: -0.8rem;
+    font-weight: bold;
+}
+
+.site-speak{
+    display: flex;
+    flex-direction: column;
+    min-height: 78vh;
+    justify-content: center;
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.motto h1{
+    font-weight: 700;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+}
+
+@media screen and (min-width: 992px)
+{
+.motto h1{
+    font-size: 5.25rem;
+    letter-spacing: 0.2rem;
+}
+}
+
+.speak h3{
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+@media screen and (min-width: 800px)
+{
+.speak h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+}
+
+
+@media screen and (min-width: 992px)
+{
+.speak h3 {
+    font-size: 2.75rem;
+    margin: 1.5rem 0;
+}
+}
+
+.show{
+    width: 8rem;
+    margin-top:1.75rem;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    color: white;
+    transition: all 0.3s linear;
+   letter-spacing: 0.1rem;
+   text-decoration: none;
+   padding: 0.5rem 0.75rem;
+}
+
+.show:hover{
+cursor: pointer;
+color: #ca5555;
+background-color: white;
+}
+
+.lower-section{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.lower-section h2{
+    color: #102a42;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-section span{
+    color: hsl(21, 62%, 45%);
+    font-size: 0.85em;
+    margin-right: 1rem;
+}
+
+.product{
+    margin: 3rem auto 2rem auto;
+    display: grid;
+    gap: 1rem;
+    min-height: 6rem;
+    position: relative;
+    width: 90vw;
+    max-width: 1190px;
+}
+
+@media screen and (min-width: 992px)
+
+{.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+
+@media screen and (min-width: 1200px)
+{
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-container{
+    width: 100%;
+    margin-bottom: 9px;
+    position: relative;
+}
+
+.product-name{
+    color: hsl(210, 22%, 49%);
+}
+
+.price{
+    margin-bottom: 0;
+    color: hsl(209, 34%, 30%);
+    font-weight: 700;
+}
+
+.item-img{
+
+    width: 100%;
+    height: 18rem;
+   
+    object-fit: cover;
+    display: block;
+    border-radius: 0.25rem;
+
+}
+
+@media screen and (min-width: 1200px)
+{.item-img {
+    height: 14rem;
+}
+}
+
+.item:hover .product-icons{
+    opacity: 1;
+}
+
+.product-icons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.product-icon{
+    font-size: 1rem;
+    text-decoration: none;
+    background: hsl(21, 62%, 45%);
+    color: white;
+    width: 2.25rem;
+    height: 2.25rem;
+    /* text-align: center; */
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 0.5rem;
+    transition: all 0.3s linear;
+}
+
+.product-cart{
+    font-size: 1rem;
+    text-decoration: none;
+    background: hsl(21, 62%, 45%);
+    color: white;
+    width: 2.25rem;
+    height: 2.25rem;
+    /* text-align: center; */
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 0.4rem;
+    transition: all 0.3s linear;
+    border: transparent;
+    cursor: pointer;
+}
+
+.product-icon:hover, .product-cart:hover{
+    background-color: hsl(21, 65%, 59%);
+}
+
+.all-products {
+    padding: 8px 19px;
+    font-size: 1rem;
+    background-color: hsl(21, 62%, 45%);
+    border: none;
+   color: white;
+    transition: all 0.3s linear;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+
+.all-products:hover{
+    cursor: pointer;
+    background-color: hsl(21, 65%, 59%);
+    color: rgb(83, 61, 61);
+}
+
+.cart-overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    transition: all 0.3s linear;
+    opacity: 0;
+    z-index: -1;
+}
+
+.cart-item{
+    margin-top: 2rem;
+}
+
+.selected-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.selected-item img{
+    border-radius: 3px;
+    width: 75px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.selected-item-info{
+    margin-left: 1.5rem;
+}
+
+.selected-item-info h5{
+    margin-bottom: 0.15rem;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.selected-item-price{
+    font-size: 0.75rem;
+    color: hsl(209, 34%, 30%);
+}
+
+.selected-item-remove{
+    background: transparent;
+    border-color: transparent;
+    color: hsl(210, 22%, 49%);
+    cursor: pointer;
+    text-transform: none;
+}
+
+.quantity-toogle{
+    position: absolute;
+    right: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quantity-toogle .increase,.decrease{
+    background: transparent;
+    border-color: transparent;
+    color: hsl(21, 62%, 45%);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.25rem;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    padding: 3rem 1rem 0 1rem;
+    background-color:  hsl(210, 36%, 96%);
+    transition: all 0.3s linear;
+    overflow: scroll;
+    transform: translateX(100%);
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.cart.showel{
+    transform: translateX(0);
+}
+
+.cart-overlay.showel{
+    opacity: 1;
+    z-index: 100;
+}
+
+.cross{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.9rem;
+    background: transparent;
+    border: none;
+    font-size: 2.4rem;
+    color: hsl(210, 22%, 49%);
+    cursor: pointer;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 0.6rem;
+    font-size: 2.0rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.total{
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.checkout{
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+    border-color: transparent;
+    margin-bottom: 3rem;
+    background-color: hsl(21, 62%, 45%);
+    font-size: 0.9rem;
+    color: white;
+    width: 72%;
+    padding: 0.4rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.checkout:hover{
+    background-color: hsl(21, 65%, 59%);
+    color: #222;
+}
+
+.loading{
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 400;
+}
+
+.loading h2{
+    line-height: 1;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+
+
+.page-loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(210, 36%, 96%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-loading h2{
+    line-height: 1;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+
+.sidebar-overlay.show-sidebar {
+    opacity: 1;
+    z-index: 100;
+}
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    z-index: -1;
+    transition: all 0.3s linear;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.show-sidebar .sidebar {
+    transform: scale(1);
+}
+.sidebar {
+    width: 90vw;
+    height: 95vh;
+    max-width: 620px;
+    background: white;
+    border-radius: .25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 4rem;
+    transform: scale(0);
+}
+
+.sidebar-close {
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: hsl(210, 22%, 49%);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.sidebar-link {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #102a42;
+}
+
+.sidebar-link i {
+    color: hsl(210, 22%, 49%);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 800px)
+{
+h1, h2, h3, h4 {
+    line-height: 1;
+}
+}
+
+@media screen and (min-width: 800px)
+{
+h1 {
+    font-size: 4rem;
+}
+}
+
+@media screen and (min-width: 800px)
+{
+h2 {
+    font-size: 2.5rem;
+}
+}
+
+@media screen and (min-width: 800px)
+{
+h4 {
+    font-size: 1rem;
+}
+}

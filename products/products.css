@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.products-section{
+    min-height: 100vh;
+}
+
+.list ul li a{
+    color: #102a42;
+}
+
+.cart-img{
+    color: #102a42;
+}
+
+.about-hero{
+    min-height: 20vh;
+    background: hsl(210, 36%, 96%);
+    /* margin-top: 3rem; */
+    display: grid;
+    place-items: center;
+    color: hsl(210, 22%, 49%);
+}
+
+.section-center, .products-center{
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.products-center{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4rem auto;
+    display: grid;
+ 
+    grid-gap: 1rem;
+    position: relative;
+}
+
+@media screen and (min-width: 768px){
+    .products-center{
+        grid-template-columns: 240px 1fr;
+    }
+}
+
+.filter{
+    position: sticky;
+    top: 1rem;
+}
+
+.filter h4{
+    font-weight: 500;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.company-btn{
+    display: block;
+    margin: 0.25em 0;
+    padding: 0.25rem;
+    text-transform: capitalize;
+    background: transparent;
+    border-color: transparent;
+    letter-spacing: 0.1rem;
+    color: hsl(210, 22%, 49%);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.company-btn:hover{
+    color: hsl(209, 34%, 30%);
+}
+
+.search-input{
+    padding: 0.5rem;
+    background: hsl(210, 36%, 96%);
+    border-radius: 0.25rem;
+    border-color: transparent;
+    letter-spacing: 0.1rem;
+}
+
+.price-range{
+    background: hsl(210, 22%, 49%) !important;
+    color: hsl(210, 22%, 49%);
+}
+
+.price-value{
+    margin-bottom: 1.25rem;
+    color: hsl(210, 22%, 49%);
+}
+
+@media screen and (min-width: 992px){
+    .products-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+    }
+
+@media screen and (min-width: 1170px)
+{
+.products-info{
+ grid-template-columns: repeat(3,1fr);
+}
+}
+
+
+.item{
+    margin-bottom: 1rem;
+}
+@media screen and (min-width: 992px)
+{.products-info .item-img{
+height: 10rem;
+}
+    
+}
+
+.nf{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.75rem;
+}
+

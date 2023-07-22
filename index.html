@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy Store</title>
+    <link rel="stylesheet" href="index.css">
+
+    
+</head>
+
+
+
+<body>
+    <!-- <div class="main"> -->
+    <div class="upper-section">
+      <div class="navbar">
+                    <nav class="navbar-center">
+                <div class="list">
+                    <button class="toggle-nav">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./products/products.html">Products</a></li>
+                        <li><a href="./About/about.html">about</a></li>
+                    </ul>
+                </div>
+                <img class="title" src="./images/logo-white.svg" alt="">
+                <div class="cart-logo">
+                    <i class="fa-solid fa-cart-shopping fa-xl cart-img"></i>
+                    <div class="circle"></div>
+                </div>
+            </nav>
+      </div>
+
+
+            <div class="site-speak">
+                <div class="motto">
+                   <h1> rest, Relax, unwind </h1>
+                </div>
+                <div class="speak">
+                  <h3> embrace your choices - we do</h3> 
+                </div>
+                <a class="show" href="./products/products.html">SHOP NOW</a>
+            </div>
+
+    </div>
+    <div class="sidebar-overlay ">
+        <aside class="sidebar">
+          <!-- close -->
+          <button class="sidebar-close">
+            <i class="fas fa-times"></i>
+          </button>
+          <!-- links -->
+          <ul class="sidebar-links">
+            <li>
+              <a href="index.html" class="sidebar-link">
+                <i class="fas fa-home fa-fw"></i>
+                home
+              </a>
+            </li>
+            <li>
+              <a href="./products/products.html" class="sidebar-link">
+                <i class="fas fa-couch fa-fw"></i>
+                products
+              </a>
+            </li>
+            <li>
+              <a href="./About/about.html" class="sidebar-link">
+                <i class="fas fa-book fa-fw"></i>
+                about
+              </a>
+
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+    <div class="cart-overlay">
+        <aside class="cart">
+            <button class="cross"><i class="fas fa-times"></i></button>
+            <div class="heading">Your bag</div>
+            <div class="cart-item">
+          <!-- <div class="selected-item">
+            <img src="https://course-api.com/images/store/product-1.jpeg" >
+            <div class="selected-item-info">
+                <h5>High Back Bench</h5>
+                <div class="selected-item-price">$4.55</div>
+                <button class="selected-item-remove">remove</button>
+            </div>
+            <div class="quantity-toogle">
+                <button class="increase">+</button>
+          
+                <span class="quantity-number">1</span>
+                <button class="decrease">-</button>
+            </div>
+          </div> -->
+            </div>
+            <div class="footer">
+                <div class="total">Total: <span class="total-amount">$0.00</span></div>
+                <button class="checkout">checkout</button>
+            </div>
+        </aside>
+    </div>
+
+    <div class="lower-section">
+        <h2><span>/</span>Featured</h2>
+        <div class="product ">
+           <div class="loading"><h2>loading...</h2></div>
+        </div>
+    <a class="all-products" href="./products/products.html">ALL PRODUCTS</a>
+    </div>
+    <!-- </div>     -->
+
+    <script type="module" src="index.js" ></script>
+    <script type="module" src="./Functionality/openSidebar.js" ></script>
+    <script type="module" src="./Functionality/localstorage.js" ></script>
+    <script src="https://kit.fontawesome.com/b20fe84233.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

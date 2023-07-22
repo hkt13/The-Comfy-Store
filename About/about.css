@@ -1,0 +1,78 @@
+
+.about-section{
+    min-height: 100vh;
+}
+
+.list ul li a{
+    color: #102a42;
+}
+
+.cart-img{
+    color: #102a42;
+}
+
+.navbar{
+    min-height: 6rem;
+    margin: 0px 4rem;
+}
+
+.about-hero{
+    min-height: 20vh;
+    background: hsl(210, 36%, 96%);
+    /* margin-top: 3rem; */
+    display: grid;
+    place-items: center;
+    color: hsl(210, 22%, 49%);
+}
+
+.section{
+   padding: 5rem 0;;
+}
+
+.section-center{
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 0 auto;
+  
+}
+
+.about-heading{
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+
+@media screen and (min-width: 800px)
+{.about-heading{
+    font-size: 1.75rem;
+}}
+
+
+.about-title h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #102a42;
+}
+
+.about-title span{
+    font-size: 0.85em;
+    color: hsl(21, 62%, 45%);
+    margin-right: 1rem;
+}
+
+.about-txt{
+    max-width: 44rem;
+    margin: 0 auto;
+    font-size: 1rem;
+    margin-top: 2rem;
+    text-align: justify;
+    color: hsl(210, 22%, 49%);
+    line-height: 2;
+    letter-spacing: 0;
+    font-weight: 500;
+}
