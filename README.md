@@ -1,2 +1,2 @@
 # The-Comfy-Store
-<h3 align="left">👉 Live Demo: <a href="https://hkt13.github.io/The-Comfy-Store/" target="_blank">Live Demo</a></h3>
+<h3 align="left">👉 Live Demo: <a href="https://hkt13.github.io/The-Comfy-Store/" target=" ">Live Demo</a></h3>
