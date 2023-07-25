@@ -12,9 +12,11 @@ toogle();
     {
         console.log('run')
        if (window.location.pathname === 'https://hkt13.github.io/The-Comfy-Store/index.html') {
+        console.log('came here')
            loadingel.style.display = 'block';
     
         productel.innerHTML  =products.filter((product,index)=>{
+            console.log('came here also')
         const { id, title, image, price,featured } = product
         console.log(product)
         return featured===true;
