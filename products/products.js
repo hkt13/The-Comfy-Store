@@ -1,5 +1,5 @@
 import {products} from "../items.js";
-import { events } from "../index.js";
+import { events } from "../Functionality/eventsfile.js";
 import toogle from "../Functionality/toogle.js";
 const productsel = document.querySelector('.products-info')
 const searchinputel = document.querySelector('.search-input')

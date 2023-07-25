@@ -1,27 +1,18 @@
 import {products} from "./items.js";
 import toogle from "./Functionality/toogle.js";
-import {opensidebar} from "./Functionality/openSidebar.js"
+import { events } from "./Functionality/eventsfile.js";
 const loadingel = document.querySelector('.loading')
-const circleel = document.querySelector('.circle')
 const productel = document.querySelector('.product')
-console.log('runnn')
 
 toogle();
 
      function run()
     {
-        console.log('run')
-       if (window.location.pathname === '/The-Comfy-Store/index.html' || window.location.pathname === '/index.html' || window.location.pathname === '/The-Comfy-Store/' ) {
-        console.log('came here')
-           loadingel.style.display = 'block';
-    
+        loadingel.style.display = 'block';
         productel.innerHTML  =products.filter((product,index)=>{
-            console.log('came hrere')
         const { id, title, image, price,featured } = product
-        console.log(product)
         return featured===true;
        }).map((product,index)=>{
-        console.log(product)
         const { id, title, image, price } = product
         return ` <div class="item">
         <div class="product-container">
@@ -37,30 +28,11 @@ toogle();
        }
     
        ).join('');
+     
        loadingel.style.display = 'none';
-       }
        events()        
-    } 
+    }
 
-      export const events=()=>{    
-    let productcartel = document.querySelectorAll('.product-cart');
-    Array.from(productcartel).map(product=>{
-     product.addEventListener('click',(e)=>{
-         circleel.innerText = parseInt(circleel.innerText) + 1;
-         opensidebar(product.id,products)
-
-     })
-    })
-    let producticonel = document.querySelectorAll('.product-icon')
-    Array.from(producticonel).map(product=>{
-     product.addEventListener('click',(e)=>{
-          let myData = {
-             'key' : `${product.id}`
-          }
-         localStorage.setItem( 'objectToPass', JSON.stringify(myData));
-     })
-    })
-}
 
         run();
      
