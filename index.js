@@ -11,7 +11,7 @@ toogle();
      function run()
     {
         console.log('run')
-       if (window.location.pathname === '/index.html') {
+       if (window.location.pathname === 'https://hkt13.github.io/The-Comfy-Store/index.html') {
            loadingel.style.display = 'block';
     
         productel.innerHTML  =products.filter((product,index)=>{
