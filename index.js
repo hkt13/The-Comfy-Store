@@ -4,19 +4,22 @@ import {opensidebar} from "./Functionality/openSidebar.js"
 const loadingel = document.querySelector('.loading')
 const circleel = document.querySelector('.circle')
 const productel = document.querySelector('.product')
+console.log('runnn')
 
 toogle();
 
      function run()
     {
+        console.log('run')
        if (window.location.pathname === '/index.html') {
            loadingel.style.display = 'block';
     
         productel.innerHTML  =products.filter((product,index)=>{
         const { id, title, image, price,featured } = product
+        console.log(product)
         return featured===true;
        }).map((product,index)=>{
-        
+        console.log(product)
         const { id, title, image, price } = product
         return ` <div class="item">
         <div class="product-container">
