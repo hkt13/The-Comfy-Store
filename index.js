@@ -11,7 +11,7 @@ toogle();
      function run()
     {
         console.log('run')
-       if (window.location.pathname === '/The-Comfy-Store/') {
+    //    if (window.location.pathname === '/The-Comfy-Store/') {
         console.log('came here')
            loadingel.style.display = 'block';
     
@@ -38,7 +38,7 @@ toogle();
     
        ).join('');
        loadingel.style.display = 'none';
-       }
+    //    }
        events()        
     } 
 
