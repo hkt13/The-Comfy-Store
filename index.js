@@ -11,12 +11,12 @@ toogle();
      function run()
     {
         console.log('run')
-    //    if (window.location.pathname === '/The-Comfy-Store/') {
+       if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
         console.log('came here')
            loadingel.style.display = 'block';
     
         productel.innerHTML  =products.filter((product,index)=>{
-            console.log('came here also')
+            console.log('came hrere')
         const { id, title, image, price,featured } = product
         console.log(product)
         return featured===true;
@@ -38,7 +38,7 @@ toogle();
     
        ).join('');
        loadingel.style.display = 'none';
-    //    }
+       }
        events()        
     } 
 
